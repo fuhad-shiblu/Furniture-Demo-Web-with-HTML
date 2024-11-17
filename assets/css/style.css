@@ -1,0 +1,572 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+/* ========== Common CSS Part Start ========== */
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul,ol{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+input{
+    outline: 0;
+}
+:root{
+    --Montserrat: "Montserrat", sans-serif;
+}
+/* ========== Common CSS Part End ========== */
+
+/* ========== Navbar Part Start ========== */
+nav{
+    margin-top: 43px;
+}
+.fuhadShiblu_navLogo img{
+    width: 167px;
+    height: 41px;
+    transition: all linear .1s;
+}
+.fuhadShiblu_navLogo img:hover{
+    transform: scale(1.1);
+}
+.fuhadShiblu_navLogo img:active{
+    transform: scale(0.9);
+}
+.fuhadShiblu_navMenu{
+    display: flex;
+    justify-content: end;
+}
+.fuhadShiblu_navMenu ul{
+    display: flex;
+    gap: 73px;
+}
+.fuhadShiblu_navMenu ul li a{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--Montserrat);
+    color: #333 !important;
+    transition: all linear .1s;
+    position: relative;
+}
+.fuhadShiblu_navMenu ul li a:hover{
+    color: #054C73 !important;
+    transform: scale(1.1);
+}
+.fuhadShiblu_navMenu ul li a::after{
+    content: '';
+    width: 0;
+    height: 1px;
+    background: #054C73;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all linear .1s;
+}
+.fuhadShiblu_navMenu ul li a:hover::after{
+    width: 100%;
+}
+/* ========== Navbar Part End ========== */
+
+/* ========== Collection Part Start ========== */
+#fuhadShiblu_collectionMain{
+    width: 100%;
+    height: 749px;
+    background: url(/assets/images/bgcoll.png);
+    margin-top: 38px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.fuhadShiblu_collectionTxtArea{
+    width: 643px;
+    height: 443px;
+    background: #DFE9F4;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    right: 90px;
+    transform: translateY(-50%);
+    padding: 37px 0 41px 39px;
+}
+.fuhadShiblu_collectionTxtArea span{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--Montserrat);
+    color: #333;
+}
+.fuhadShiblu_collectionTxtArea h1{
+    width: 421px;
+    font-size: 52px;
+    font-weight: 700;
+    font-family: var(--Montserrat);
+    color: #054C73;
+    margin: 20px 0 20px 0;
+}
+.fuhadShiblu_collectionTxtArea p{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--Montserrat);
+    color: #333;
+}
+.fuhadShiblu_collectionTxtArea p{
+    width: 546px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--Montserrat);
+    color: #333;
+    margin-bottom: 30px;
+}
+.fuhadShiblu_collectionTxtArea a{
+    padding: 25px 72px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--Montserrat);
+    color: #fff;
+    background: #054C73;
+    border-radius: 50px;
+    transition: all linear .1s;
+}
+.fuhadShiblu_collectionTxtArea a:hover{
+    box-shadow: 8px 9px 9px -2px rgba(0,0,0,0.75);
+}
+.fuhadShiblu_collectionTxtArea a:active{
+    box-shadow: inset 8px 9px 9px -2px rgba(0,0,0,0.75);
+}
+/* ========== Collection Part End ========== */
+
+/* ========== Sub Collection Part Start ========== */
+#fuhadShiblu_subColMain{
+    background: #F2F5FF;
+    padding: 46px 0 49px 0;
+}
+.fuhadShiblu_delSupAuth{
+    display: flex;
+    gap: 27px;
+    align-items: center;
+}
+.fuhadShiblu_delSupAuth img{
+    width: 83px;
+    height: 50px;
+}
+.fuhadShiblu_delTxtArea h2{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--Montserrat);
+    color: #333;
+}
+.fuhadShiblu_delTxtArea p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--Montserrat);
+    color: #333;
+}
+.fuhadShiblu_authMain{
+    display: flex;
+    justify-content: end;
+}
+.fuhadShiblu_supMain{
+    display: flex;
+    justify-content: center;
+}
+/* ========== Sub Collection Part End ========== */
+
+/* ========== Inspiration Part Start ========== */
+#fuhadShiblu_inspirationMain{
+    margin: 60px 0 66px 0;
+}
+.fuhadShiblu_inspirationTxtArea{
+    text-align: center;
+}
+.fuhadShiblu_inspirationTxtArea h3{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--Montserrat);
+    color: #333;
+}
+.fuhadShiblu_inspirationTxtArea p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--Montserrat);
+    color: #666;
+    margin: 19px 0 12px 0;
+}
+.fuhadShiblu_inspirationImg1{
+    width: 355px;
+    height: 434px;
+    overflow: hidden;
+    border-top-left-radius: 78px;
+    margin-top: 75px;
+}
+.fuhadShiblu_inspirationImg1 img{
+    transition: all linear .1s;
+}
+.fuhadShiblu_inspirationImg1 img:hover{
+    transform: scale(1.5);
+}
+.fuhadShiblu_inspirationImg2{
+    width: 355px;
+    height: 434px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.fuhadShiblu_inspirationImg2 img{
+    transition: all linear .1s;
+}
+.fuhadShiblu_inspirationImg2 img:hover{
+    transform: scale(1.5);
+}
+.fuhadShiblu_inspirationImg3{
+    width: 355px;
+    height: 434px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: end;
+    margin-top: 75px;
+}
+.fuhadShiblu_inspirationImg3 img{
+    transition: all linear .1s;
+}
+.fuhadShiblu_inspirationImg3 img:hover{
+    transform: scale(1.5);
+}
+/* ========== Inspiration Part End ========== */
+
+/* ========== Beautify Part Start ========== */
+#fuhadShiblu_beautifyMain{
+    width: 100%;
+    height: 874px;
+    background: #F2F5FF;
+    position: relative;
+}
+.fuhadShiblu_beautifyTxtArea h4{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--Montserrat);
+    color: #333;
+    margin-top: 295px;
+}
+.fuhadShiblu_beautifyTxtArea p{
+    width: 489px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--Montserrat);
+    color: #666;
+    margin: 20px 0 30px 0;
+}
+.fuhadShiblu_beautifyTxtArea a{
+    padding: 24px 57px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--Montserrat);
+    color: #fff;
+    background: #054C73;
+    border-radius: 50px;
+    transition: all linear .1s;
+}
+.fuhadShiblu_beautifyTxtArea a:hover{
+    box-shadow: inset 8px 9px 9px -2px rgba(0,0,0,0.75);
+}
+.fuhadShiblu_beautifyTxtArea a:active{
+    box-shadow: 8px 9px 9px -2px rgba(0,0,0,0.75);
+}
+.fuhadShiblu_beautifyImg{
+    width: 500px;
+    height: 754px;
+    overflow: hidden;
+    border-top-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+}
+.fuhadShiblu_beautifyImg img{
+    transition: all linear .1s;
+}
+.fuhadShiblu_beautifyImg img:hover{
+    transform: scale(1.1);
+}
+.fuhadShiblu_beautifyCircleMain{
+    display: flex;
+    justify-content: end;
+    margin-top: 244px;
+}
+.fuhadShiblu_beautifyCircle{
+    width: 372px;
+    height: 373px;
+    border-radius: 50%;
+    background: #09513B;
+}
+#fuhadShiblu_beautifyMain img{
+    width: 500px;
+    height: 754px;
+    border-top-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 225px;
+}
+/* ========== Beautify Part End ========== */
+
+/* ========== Range Part Start ========== */
+#fuhadShiblu_rangeMain{
+    margin: 55px 0 121px 0;
+}
+.fuhadShiblu_rangeTxtArea{
+    text-align: center;
+}
+.fuhadShiblu_rangeTxtArea h5{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--Montserrat);
+    color: #333;
+}
+.fuhadShiblu_rangeTxtArea p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--Montserrat);
+    color: #666;
+    margin: 20px 0 50px 0;
+}
+.fuhadShiblu_rangeImg{
+    width: 381px;
+    height: 480px;
+    overflow: hidden;
+}
+.fuhadShiblu_rangeImg img{
+    transition: all linear .1s;
+}
+.fuhadShiblu_rangeImg img:hover{
+    transform: scale(1.1);
+}
+.fuhadShiblu_rangeTxt p{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--Montserrat);
+    color: #333;
+}
+/* ========== Range Part End ========== */
+
+/* ========== Works Part Start ========== */
+.fuhadShiblu_worksTxtArea{
+    text-align: center;
+}
+.fuhadShiblu_worksTxtArea h6{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--Montserrat);
+    color: #333;
+}
+.fuhadShiblu_worksTxtArea p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--Montserrat);
+    color: #666;
+    margin: 20px 0 50px 0;
+}
+.fuhadShiblu_worksImg{
+    width: 381px;
+    height: 445px;
+    overflow: hidden;
+    position: relative;
+}
+.fuhadShiblu_worksImg img{
+    width: 381px;
+    height: 400px;
+    transition: all linear .1s;
+}
+.fuhadShiblu_worksImg img:hover{
+    transform: scale(1.1);
+}
+.fuhadShiblu_worksTxtMain{
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    background: #fff;
+    position: absolute;
+    top: 355px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.fuhadShiblu_worksTxtMain p{
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--Montserrat);
+    color: #fff;
+    background: #000;
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+    transition: all linear .1s;
+}
+.fuhadShiblu_worksTxtMain p:hover{
+    transform: scale(1.1);
+}
+.fuhadShiblu_worksSubTxtArea{
+    text-align: center;
+    margin-bottom: 198px;
+}
+.fuhadShiblu_worksSubTxtArea h6{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--Montserrat);
+    color: #000;
+    margin: 30px 0 10px 0;
+}
+.fuhadShiblu_worksSubTxtArea p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--Montserrat);
+    color: #666;
+}
+/* ========== Works Part End ========== */
+
+/* ========== Mailing Part Start ========== */
+#fuhadShiblu_mailingMain{
+    padding: 59px 0 60px 0;
+    background: #F2F5FF;
+}
+.fuhadShiblu_mailingTxtArea{
+    text-align: center;
+}
+.fuhadShiblu_mailingTxtArea h6{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--Montserrat);
+    color: #333;
+}
+.fuhadShiblu_mailingTxtArea p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--Montserrat);
+    color: #666;
+    margin: 10px 0 50px 0;
+}
+form{
+    width: 486px;
+    height: 70px;
+    position: relative;
+    margin: 0 auto;
+}
+form input{
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    border: 1px solid #000;
+    padding: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--Montserrat);
+    color: #011C42;
+}
+form input::placeholder{
+    color: #666;
+}
+form button{
+    width: 153px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background: #011C42;
+    border: 1px solid #011C42;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--Montserrat);
+    color: #fff;
+    transition: all linear .1s;
+}
+form button:active{
+    transform: scale(1.1);
+}
+/* ========== Mailing Part End ========== */
+
+/* ========== Footer Part Start ========== */
+footer{
+    padding: 49px 0 89px 0;
+    background: #03344F;
+    position: relative;
+}
+.fuhadShiblu_footerTxtArea h6{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--Montserrat);
+    color: #fff;
+}
+.fuhadShiblu_footerTxtArea p{
+    width: 400px;
+    height: 97px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--Montserrat);
+    color: #fff;
+    margin: 34px 0 21px 0;
+}
+.fuhadShiblu_footerTxtArea a{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--Montserrat);
+    color: #fff;
+    transition: all linear .1s;
+}
+.fuhadShiblu_footerTxtArea a:hover{
+    text-decoration: underline;
+}
+.fuhadShiblu_footerTxtArea a:active{
+    transform: scale(1.1);
+}
+.fuhadShiblu_footerAreaImg{
+    display: flex;
+    gap: 21px;
+}
+.fuhadShiblu_footerAreaImg img{
+    transition: all linear .1s;
+}
+.fuhadShiblu_footerAreaImg img:hover{
+    transform: scale(1.1);
+}
+.fuhadShiblu_footerAreaTxt h6{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--Montserrat);
+    color: #fff;
+    margin: 0 0 34px 0;
+}
+.fuhadShiblu_credit{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: var(--Montserrat);
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.fuhadShiblu_heartCredit{
+    color: #ff0000;
+}
+.fuhadShiblu_credit a{
+    color: #fff;
+    font-weight: 900;
+}
+.fuhadShiblu_credit a:hover{
+    text-decoration: underline;
+}
+/* ========== Footer Part End ========== */
